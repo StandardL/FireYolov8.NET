@@ -1,8 +1,8 @@
 # Privacy Policy
 
-***Update date: Dec 05, 2023***
+*Update date: Dec 05, 2023*
 
-***Effective date: Dec 05, 2023***
+*Effective date: Dec 05, 2023*
 
 ### General
 
@@ -10,7 +10,7 @@ The developer respects and protects the personal privacy of all users of the ser
 
 ## 1. Stored Sensitive Information
 
-When using our software, we store the captured video frames on your machine's **local disk** for the sake of smooth detecting. They will not be uploaded to any server, and you can clear them at any time in the software's settings page.
+When using our software, we store the captured video frames on your machine's **LOCAL DISK** for the sake of smooth detecting. They will not be uploaded to any server, and you can clear them at any time in the software's settings page.
 
 ## 2. Permission Request
 
