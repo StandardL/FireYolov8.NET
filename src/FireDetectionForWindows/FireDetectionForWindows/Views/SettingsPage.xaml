@@ -1,0 +1,105 @@
+﻿<Page
+    x:Class="FireDetectionForWindows.Views.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:helpers="using:FireDetectionForWindows.Helpers"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:xaml="using:Microsoft.UI.Xaml"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <helpers:EnumToBooleanConverter x:Key="EnumToBooleanConverter" />
+    </Page.Resources>
+    <Grid>
+        <StackPanel x:Name="ContentArea">
+            <TextBlock x:Uid="Settings_Personalization" Style="{ThemeResource SubtitleTextBlockStyle}" />
+            <StackPanel Margin="{StaticResource SmallTopBottomMargin}">
+                <TextBlock x:Uid="Settings_Theme" />
+
+                <StackPanel Margin="{StaticResource XSmallTopMargin}">
+                    <RadioButton
+                        x:Uid="Settings_Theme_Light"
+                        Command="{x:Bind ViewModel.SwitchThemeCommand}"
+                        FontSize="15"
+                        GroupName="AppTheme"
+                        IsChecked="{x:Bind ViewModel.ElementTheme, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Light, Mode=OneWay}">
+                        <RadioButton.CommandParameter>
+                            <xaml:ElementTheme>Light</xaml:ElementTheme>
+                        </RadioButton.CommandParameter>
+                    </RadioButton>
+                    <RadioButton
+                        x:Uid="Settings_Theme_Dark"
+                        Command="{x:Bind ViewModel.SwitchThemeCommand}"
+                        FontSize="15"
+                        GroupName="AppTheme"
+                        IsChecked="{x:Bind ViewModel.ElementTheme, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Dark, Mode=OneWay}">
+                        <RadioButton.CommandParameter>
+                            <xaml:ElementTheme>Dark</xaml:ElementTheme>
+                        </RadioButton.CommandParameter>
+                    </RadioButton>
+                    <RadioButton
+                        x:Uid="Settings_Theme_Default"
+                        Command="{x:Bind ViewModel.SwitchThemeCommand}"
+                        FontSize="15"
+                        GroupName="AppTheme"
+                        IsChecked="{x:Bind ViewModel.ElementTheme, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Default, Mode=OneWay}">
+                        <RadioButton.CommandParameter>
+                            <xaml:ElementTheme>Default</xaml:ElementTheme>
+                        </RadioButton.CommandParameter>
+                    </RadioButton>
+                </StackPanel>
+            </StackPanel>
+
+            <TextBlock x:Uid="Settings_About" Style="{ThemeResource SubtitleTextBlockStyle}" />
+
+            <StackPanel Margin="{StaticResource XSmallTopMargin}">
+                <TextBlock Style="{ThemeResource BodyTextBlockStyle}" Text="{x:Bind ViewModel.VersionDescription, Mode=OneWay}" />
+
+                <TextBlock
+                    x:Uid="Settings_AboutDescription"
+                    Margin="{StaticResource XSmallTopMargin}"
+                    Style="{ThemeResource BodyTextBlockStyle}" />
+                <RelativePanel Margin="{StaticResource SettingsPageHyperlinkButtonMargin}">
+                    <HyperlinkButton x:Name="SettingsPage_PrivacyTermsLink" x:Uid="SettingsPage_PrivacyTermsLink" />
+                    <HyperlinkButton
+                        x:Uid="SettingsPage_GithubLink"
+                        Margin="10,0,0,0"
+                        NavigateUri="https://github.com/StandardL/FireYolov8.NET"
+                        RelativePanel.RightOf="SettingsPage_PrivacyTermsLink" />
+                </RelativePanel>
+            </StackPanel>
+
+            <TextBlock
+                x:Uid="Settings_Cache"
+                Margin="{StaticResource XSmallTopMargin}"
+                Style="{ThemeResource SubtitleTextBlockStyle}" />
+            <StackPanel Margin="{StaticResource XSmallTopMargin}">
+                <RelativePanel>
+                    <TextBlock
+                        x:Name="UsedMem"
+                        x:Uid="UsedMem"
+                        Style="{ThemeResource BodyTextBlockStyle}" />
+                    <TextBlock
+                        x:Name="CacheSize_Text"
+                        RelativePanel.RightOf="UsedMem"
+                        Style="{ThemeResource BodyTextBlockStyle}" />
+                </RelativePanel>
+
+                <RelativePanel>
+                    <Button
+                        x:Name="CacheClear_Button"
+                        x:Uid="CacheClear_Button"
+                        Margin="{StaticResource XSmallTopMargin}"
+                        Click="CacheClear_Button_Click"
+                        Style="{StaticResource AccentButtonStyle}" />
+                    <ProgressRing
+                        x:Name="CleaningRing"
+                        Margin="{StaticResource XSmallLeftTopRightBottomMargin}"
+                        IsActive="False"
+                        RelativePanel.RightOf="CacheClear_Button" />
+                </RelativePanel>
+
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

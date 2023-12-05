@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "FireDetectionForWindows (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "FireDetectionForWindows (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}
