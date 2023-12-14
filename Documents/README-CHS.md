@@ -8,13 +8,13 @@
     <a href="https://github.com/StandardL/FireYolov8.NET/blob/main/Documents/README-CHS.md">English</a>
    </p>
 
-> 由 StandardL 开发
+> 由 StandardL 的团队开发
 >
-> 版权所有(c) StandardL(Github). 保留所有权利.
+> 版权所有(c) StandardL团队(Github). 保留所有权利.
 
 ## 简述
 
-一个使用WinUI3应用程序，使用ONNX Runtime来运行YOLOv8模型
+一个WinUI3应用程序，使用ONNX Runtime来运行YOLOv8模型
 
 使用 YOLOv8n 作为基础模型进行训练
 
@@ -43,7 +43,7 @@
 2. 运行 `install.ps1` 脚本
 3. 从开始菜单中启动程序
 
-详细的安装教程将在稍后添加
+详细的安装教程在[这里](https://github.com/StandardL/FireYolov8.NET/wiki/%E7%81%AB%E7%81%BE%E6%A3%80%E6%B5%8B%E8%BD%AF%E4%BB%B6%E8%AF%A6%E7%BB%86%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B). 英文教程施工中...
 
 ## 🧭 编译需求
 
@@ -58,9 +58,7 @@
 
 ## 🏆贡献者
 
-<a href="https://github.com/echoChalo/echoChalo/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=echoChalo/echoChalo" />
-</a>
+[![FireYolo Contributor](https://contrib.rocks/image?repo=StandardL/FireYolov8.NET)](https://github.com/StandardL/FireYolov8.NET/graphs/contributors)
 
 Made with [contrib.rocks](https://contrib.rocks).
 

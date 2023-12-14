@@ -8,9 +8,9 @@
     <a>English</a>
    </p>
 
-> Developed by StandardL 
+> Developed by StandardL's Group
 >
-> Copyright (c) StandardL(Github). All rights reserved.
+> Copyright (c) StandardL's Group(Github). All rights reserved.
 
 ## Description
 
@@ -27,7 +27,7 @@ Use YOLOv8n as a base model.
 ## 📫 Highlights
 
 - Fluent Design
-- Adaptive language (English and Simple Chinese)
+- Multiple language (English and Simple Chinese)
 - Support fire and smoke detection
 - Keep all you data locally
 - Lite model
@@ -43,7 +43,7 @@ Use YOLOv8n as a base model.
 2. Run `install.ps1`
 3. Launch app from Start Menu
 
-Detail install guidance will be added soon.
+Detail install guidance is [here](https://github.com/StandardL/FireYolov8.NET/wiki/Fire-Detection-Software-Installation-Guide). At this time, English version is not finished yet, you can find full guide in [Chinese](https://github.com/StandardL/FireYolov8.NET/wiki/%E7%81%AB%E7%81%BE%E6%A3%80%E6%B5%8B%E8%BD%AF%E4%BB%B6%E8%AF%A6%E7%BB%86%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B).
 
 ## 🧭 Build Requirements
 
@@ -58,9 +58,7 @@ Since we use Ultralytics's YOLO model, **AGPL-3.0 License** is used, you can rea
 
 ## 🏆Contributors
 
-<a href="https://github.com/echoChalo/echoChalo/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=echoChalo/echoChalo" />
-</a>
+[![FireYolo Contributor](https://contrib.rocks/image?repo=StandardL/FireYolov8.NET)](https://github.com/StandardL/FireYolov8.NET/graphs/contributors)
 
 Made with [contrib.rocks](https://contrib.rocks).
 
